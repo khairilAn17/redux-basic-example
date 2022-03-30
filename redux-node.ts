@@ -8,6 +8,7 @@ type TAction = {
     type:'INCREMENT'|'DECREMENT'
 } 
 
+//make reducer with old state and action
 const counterReducer = (state: TState = { counter : 0}, action: TAction): TState => {
     if(action.type === 'INCREMENT'){
         return {
